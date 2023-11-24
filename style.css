@@ -11,20 +11,44 @@
     --tranparent-white: rgba(255, 255, 255, 0.75);
 }
 
+body {
+    padding: 5.5rem 1rem;
+}
+
 h2 {
     font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--gray);
+    margin-block: 1.875rem;
 }
 
 p {
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+    color: var(--tranparent-white);
+    margin-bottom: 1.875rem;
 }
 
 a {
     font-family: 'Lexend Deca', sans-serif;
+    display: block;
+    text-decoration:none;
+    border: 2px solid var(--gray);
+    width: fit-content;
+    font-size: 0.9375rem;
+    padding: 0.75rem 2.5rem;
+    border-radius: 1.5625rem;
+    background: var(--gray);
+}
+
+section {
+    padding: 3rem;
 }
 
 .sedans {
     background: var(--orange);
+    border-radius: 8px 8px 0 0;
 }
 
 .suvs {
@@ -33,4 +57,16 @@ a {
 
 .luxuosos {
     background: var(--dark-cyan);
+}
+
+.sedans a {
+    color: var(--orange);
+}
+
+.suvs a {
+    color: var(--cyan);
+}
+
+.luxuosos a {
+    color: var(--dark-cyan);
 }
